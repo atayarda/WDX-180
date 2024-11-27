@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Table template</title>
+    <link href="minimal-table.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h1>Planets</h1> 
+
+    <table>
+        <caption>Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).</caption>
+        <colgroup>
+            <col span="2">
+            <col style="border: 2px solid black">
+            <col span="9">
+          </colgroup>
+        <thead>
+            <tr>
+                <td colspan="2"></td>
+                <th id="name">Name</th>
+                <th id="mass">Mass (10<sup>24</sup>kg)</th>
+                <th id="diameter">Diameter (km)</th>
+                <th id="density">Density (kg/m<sup>3</sup>)</th>
+                <th id="gravity">Gravity (m/s<sup>2</sup>)</th>
+                <th id="length-of-day">Length of day (hours)</th>
+                <th id="distance-from-sun">Distance from Sun (10<sup>6</sup>km)</th>
+                <th id="mean-temp">Mean temperature (°C)</th>
+                <th id="number_of_moons">Number of moons</th>
+                <th id="notes">Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th id="terrestrial-planets" rowspan="4" colspan="2">Terrestrial planets</th>
+                <th id="mercury" headers="terrestrial-planets name">Mercury</th>
+                <td headers="terrestrial-planets mercury mass">0.330</td>
+                <td headers="terrestrial-planets mercury diameter">4,879</td>
+                <td headers="terrestrial-planets mercury density">5427</td>
+                <td headers="terrestrial-planets mercury gravity">3.7</td>
+                <td headers="terrestrial-planets mercury length-of-day">4222.6</td>
+                <td headers="terrestrial-planets mercury distance-from-sun">57.9</td>
+                <td headers="terrestrial-planets mercury mean-temp">167</td>
+                <td headers="terrestrial-planets mercury number_of_moons">0</td>
+                <td headers="terrestrial-planets mercury notes">Closest to the Sun</td>
+            </tr>
+            <tr>
+                <th id="venus" headers="terrestrial-planets name">Venus</th>
+                <td headers="terrestrial-planets venus mass">4.87 </td>
+                <td headers="terrestrial-planets venus diameter">12,104</td>
+                <td headers="terrestrial-planets venus density">5243</td>
+                <td headers="terrestrial-planets venus gravity">8.9</td>
+                <td headers="terrestrial-planets venus length-of-day">2802.0</td>
+                <td headers="terrestrial-planets venus distance-from-sun">108.2</td>
+                <td headers="terrestrial-planets venus mean-temp">464</td>
+                <td headers="terrestrial-planets venus number_of_moons">0</td>
+                <td headers="terrestrial-planets venus notes"></td>
+            </tr>
+            <tr>
+                <th id="earth" headers="terrestrial-planets name">Earth</th>
+                <td headers="terrestrial-planets earth mass">5.97</td>
+                <td headers="terrestrial-planets earth diameter">12,756</td>
+                <td headers="terrestrial-planets earth density">5514 </td>
+                <td headers="terrestrial-planets earth gravity">9.8 </td>
+                <td headers="terrestrial-planets earth length-of-day">24.0 </td>
+                <td headers="terrestrial-planets earth distance-from-sun">149.6 </td>
+                <td headers="terrestrial-planets earth mean-temp">15 </td>
+                <td headers="terrestrial-planets earth number_of_moons">1</td>
+                <td headers="terrestrial-planets earth notes">Our world</td>
+            </tr>
+            <tr>
+                <th id="mars" headers="terrestrial-planets name">Mars</th>
+                <td headers="terrestrial-planets mars mass">0.642</td>
+                <td headers="terrestrial-planets mars diameter">6,792 </td>
+                <td headers="terrestrial-planets mars density">3933  </td>
+                <td headers="terrestrial-planets mars gravity">3.7 </td>
+                <td headers="terrestrial-planets mars length-of-day">24.7 </td>
+                <td headers="terrestrial-planets mars distance-from-sun">227.9  </td>
+                <td headers="terrestrial-planets mars mean-temp">-65  </td>
+                <td headers="terrestrial-planets mars number_of_moons">2</td>
+                <td headers="terrestrial-planets mars notes">The red planet</td>
+            </tr>
+            <tr>
+                <th id="jovian-planets" rowspan="4" colspan="1">Jovian planets</th>
+                <th id="gas-giants" headers="jovian-planets" rowspan="2" colspan="1">Gas giants</th>
+                <th id="jupiter" headers="jovian-planets gas-giants name">Jupiter</th>
+                <td headers="jovian-planets gas-giants jupiter mass">1898</td>
+                <td headers="jovian-planets gas-giants jupiter diameter">142,984</td>
+                <td headers="jovian-planets gas-giants jupiter density">1326 </td>
+                <td headers="jovian-planets gas-giants jupiter gravity">23.1</td>
+                <td headers="jovian-planets gas-giants jupiter length-of-day">9.9</td>
+                <td headers="jovian-planets gas-giants jupiter distance-from-sun">778.6</td>
+                <td headers="jovian-planets gas-giants jupiter mean-temp">-110</td>
+                <td headers="jovian-planets gas-giants jupiter number_of_moons">67 </td>
+                <td headers="jovian-planets gas-giants jupiter notes">The largest planet</td>
+            </tr>
+            <tr>
+                <th id="saturn " headers="jovian-planets gas-giants name">Saturn </th>
+                <td headers="jovian-planets gas-giants saturn mass">568 </td>
+                <td headers="jovian-planets gas-giants saturn diameter">120,536 </td>
+                <td headers="jovian-planets gas-giants saturn density">687 </td>
+                <td headers="jovian-planets gas-giants saturn gravity">9.0 </td>
+                <td headers="jovian-planets gas-giants saturn length-of-day">10.7 </td>
+                <td headers="jovian-planets gas-giants saturn distance-from-sun">1433.5 </td>
+                <td headers="jovian-planets gas-giants saturn mean-temp">-140</td>
+                <td headers="jovian-planets gas-giants saturn number_of_moons">62 </td>
+                <td headers="jovian-planets gas-giants saturn notes"></td>
+            </tr>
+            <tr>
+                <th id="ice-giants" headers="jovian-planets" rowspan="2" colspan="1">Ice giants</th>
+                <th id="uranus" headers="jovian-planets ice-giants name">Uranus </th>
+                <td headers="jovian-planets ice-giants uranus mass">86.8 </td>
+                <td headers="jovian-planets ice-giants uranus diameter">51,118 </td>
+                <td headers="jovian-planets ice-giants uranus density">1271  </td>
+                <td headers="jovian-planets ice-giants uranus gravity">8.7 </td>
+                <td headers="jovian-planets ice-giants uranus length-of-day">17.2</td>
+                <td headers="jovian-planets ice-giants uranus distance-from-sun">2872.5</td>
+                <td headers="jovian-planets ice-giants uranus mean-temp">-195</td>
+                <td headers="jovian-planets ice-giants uranus number_of_moons">27 </td>
+                <td headers="jovian-planets ice-giants uranus notes"></td>
+            </tr>
+            <tr>
+                <th id="neptune" headers="jovian-planets ice-giants name">Neptune  </th>
+                <td headers="jovian-planets ice-giants neptune mass">102 </td>
+                <td headers="jovian-planets ice-giants neptune diameter">49,528  </td>
+                <td headers="jovian-planets ice-giants neptune density">1638 </td>
+                <td headers="jovian-planets ice-giants neptune gravity">11.0 </td>
+                <td headers="jovian-planets ice-giants neptune length-of-day">16.1 </td>
+                <td headers="jovian-planets ice-giants neptune distance-from-sun">4495.1 </td>
+                <td headers="jovian-planets ice-giants neptune mean-temp">-200 </td>
+                <td headers="jovian-planets ice-giants neptune number_of_moons">14 </td>
+                <td headers="jovian-planets ice-giants neptune notes"></td>
+            </tr>
+            <tr>
+                <th id="dwarf-planets" rowspan="1" colspan="2">Dwarf planets*</th>
+                <th id="pluto" headers="ice-giants name">Pluto  </th>
+                <td headers="ice-giants pluto mass">0.0146 </td>
+                <td headers="ice-giants pluto diameter">2,370 </td>
+                <td headers="ice-giants pluto density">2095 </td>
+                <td headers="ice-giants pluto gravity">0.7 </td>
+                <td headers="ice-giants pluto length-of-day">153.3</td>
+                <td headers="ice-giants pluto distance-from-sun"> 5906.4</td>
+                <td headers="ice-giants pluto mean-temp">-225</td>
+                <td headers="ice-giants pluto number_of_moons">5 </td>
+                <td headers="ice-giants pluto notes">Declassified as a planet in 2006, but this <a href="http://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/">remains controversial</a>.</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+  </body>
+</html>
